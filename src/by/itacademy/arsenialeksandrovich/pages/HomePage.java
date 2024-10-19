@@ -19,4 +19,18 @@ public class HomePage extends BasePage {
     public void setHOME_URL(String HOME_URL) {
         this.HOME_URL = HOME_URL;
     }
+
+    @Override
+    public void open() {
+        System.out.println(getHOME_URL());
+    }
+
+    public void clickLogin(){
+        System.out.println("Пользователь кликнул по кнопке \"Войти\"");
+    }
+
+    public static void main(String[] args) {
+        HomePage homePage = new HomePage();
+        homePage.clickLogin();
+    }
 }
