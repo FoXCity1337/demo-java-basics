@@ -11,4 +11,17 @@ public class LoginPage extends BasePage {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    public String getLOGIN_PAGE() {
+        return LOGIN_PAGE;
+    }
+
+    public void setLOGIN_PAGE(String LOGIN_PAGE) {
+        this.LOGIN_PAGE = LOGIN_PAGE;
+    }
+
+    @Override
+    public void open() {
+        System.out.println(getLOGIN_PAGE());
+    }
 }
