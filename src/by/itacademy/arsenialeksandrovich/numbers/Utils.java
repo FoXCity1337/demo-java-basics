@@ -1,18 +1,40 @@
 package by.itacademy.arsenialeksandrovich.numbers;
 
 public class Utils {
-    public String getStringFromInt(int num) {
-        return switch (num) {
-            case 1 -> "один";
-            case 2 -> "два";
-            case 3 -> "три";
-            case 4 -> "четыре";
-            case 5 -> "пять";
-            case 6 -> "шесть";
-            case 7 -> "семь";
-            case 8 -> "восемь";
-            case 9 -> "девять";
-            default -> "";
-        };
+    public static String getStringFromInt(int num) {
+        String number;
+        switch (num) {
+            case 1:
+                number = "Один";
+                break;
+            case 2:
+                number = "Два";
+                break;
+            case 3:
+                number = "Три";
+                break;
+            case 4:
+                number = "Четыре";
+                break;
+            case 5:
+                number = "Пять";
+                break;
+            case 6:
+                number = "Шесть";
+                break;
+            case 7:
+                number = "Семь";
+                break;
+            case 8:
+                number = "Восемь";
+                break;
+            case 9:
+                number = "Девять";
+                break;
+            default:
+                number = "Введена не цифра.";
+                break;
+        }
+        return number;
     }
 }
