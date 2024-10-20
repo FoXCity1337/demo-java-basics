@@ -7,11 +7,21 @@
      border-spacing:8px;
      }
     td {
-    border:1px solid black;
-    background:#FFFFFF;
+     border:1px solid black;
+     background:#FFFFFF;
     }
     th{
      color:#FFFFFF;
+    }
+    textarea{
+     width: 97.5%;
+     height: 200px;
+    }
+    .b1{
+     background: #ff7b2c;
+     color: white;
+     width: 206%;
+     height: 50px;
     }
 </style>
 <body>
@@ -23,18 +33,20 @@
         <th colspan=2 align="left"><h1>Contact us</h1></th>
     </tr>
     <tr>
-        <td>Enter a valid email address</td>
-        <td>Enter your name</td>
+        <td width="40%"><input type="text" value="Enter a valid email"></td>
+        <td width="40%"><input type="text" value="Enter your name"></td>
     </tr>
     <tr>
-        <td>Enter your address</td>
-        <td>Enter your phone</td>
+        <td width="40%"><input type="text" value="Enter your address"></td>
+        <td width="40%"><input type="text" value="Enter your phone"></td>
     </tr>
-    <tr style="height:120px">
-        <td colspan=2>Enter your message</td>
+    <tr>
+        <td colspan=2><label>
+            <textarea>Input your message</textarea>
+        </label></td>
     </tr>
-    <tr style="height:40px" bgcolor="blue">
-        <th colspan=2 align="center" bgcolor="#ff7b2c">Submit for consideration</th>
+    <tr style="height:40px">
+        <th> <input type="button" class="b1" value="Submit for consideration "></th>
     </tr>
 </table>
 </body>
